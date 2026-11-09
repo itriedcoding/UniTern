@@ -1,0 +1,63 @@
+{
+  "name": "unitern",
+  "version": "0.1.0",
+  "description": "A lightweight 2D game engine, visual editor and toolchain for the web.",
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/engine/index.js",
+  "module": "./dist/engine/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/engine/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "unitern": "./cli/unitern.mjs"
+  },
+  "files": [
+    "dist/engine",
+    "dist/types",
+    "dist/editor",
+    "cli",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite --config vite.editor.config.ts",
+    "predev": "npm run build:runtime",
+    "prebuild": "npm run build:runtime",
+    "build": "npm run build:engine && npm run build:editor",
+    "build:engine": "vite build --config vite.engine.config.ts && tsc -p tsconfig.types.json",
+    "build:editor": "vite build --config vite.editor.config.ts",
+    "build:runtime": "node scripts/prepare-editor.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "demo:build": "node cli/unitern.mjs build templates/platformer",
+    "demo:scene": "vite-node scripts/generate-demo-scenes.ts",
+    "release": "bash scripts/release.sh"
+  },
+  "keywords": [
+    "game-engine",
+    "2d",
+    "canvas",
+    "editor",
+    "typescript",
+    "web"
+  ],
+  "dependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dist-demo/
+release/
+artifacts/
+templates/*/dist/
+editor/public/unitern.runtime.js
+editor/public/preview-demo.html
+editor/public/export-check.html
+.unitern-build.json
+*.log
+.DS_Store
+release/

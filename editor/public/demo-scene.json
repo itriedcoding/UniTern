@@ -1,0 +1,2307 @@
+{
+  "version": 1,
+  "name": "Skyward Run",
+  "settings": {
+    "background": "#0c1424",
+    "gravity": [
+      0,
+      1800
+    ],
+    "fixedStep": 0.016666666666666666
+  },
+  "assets": [],
+  "root": {
+    "id": "node-hiqmsryp",
+    "name": "Root",
+    "active": true,
+    "visible": true,
+    "screenSpace": false,
+    "tags": [],
+    "position": [
+      0,
+      0
+    ],
+    "rotation": 0,
+    "scale": [
+      1,
+      1
+    ],
+    "zIndex": 0,
+    "components": [],
+    "children": [
+      {
+        "id": "main-camera",
+        "name": "Main Camera",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          640,
+          360
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 0,
+        "components": [
+          {
+            "type": "camera",
+            "active": true,
+            "zoom": 1,
+            "rotationDegrees": 0,
+            "followId": "player",
+            "offset": [
+              0,
+              -60
+            ],
+            "damping": 7,
+            "bounds": [
+              0,
+              0,
+              2400,
+              720
+            ]
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "sky-glow",
+        "name": "Sky Glow",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1200,
+          280
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": -20,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 420,
+            "cornerRadius": 0,
+            "color": "#152640",
+            "strokeColor": "#00000000",
+            "lineWidth": 0,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "parallax",
+            "factor": [
+              0.12,
+              0.2
+            ]
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "stars",
+        "name": "Stars",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1200,
+          150
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": -15,
+        "components": [
+          {
+            "type": "parallax",
+            "factor": [
+              0.06,
+              0.08
+            ]
+          }
+        ],
+        "children": [
+          {
+            "id": "node-3nyuy7p9",
+            "name": "Star",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              -880,
+              40
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 2,
+                "cornerRadius": 0,
+                "color": "#a9c6f0",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 0.75,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-550upzz7",
+            "name": "Star",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              -620,
+              -50
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 3,
+                "cornerRadius": 0,
+                "color": "#a9c6f0",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 0.75,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-1tth7mre",
+            "name": "Star",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              -360,
+              90
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 2,
+                "cornerRadius": 0,
+                "color": "#a9c6f0",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 0.75,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-s24dqz4c",
+            "name": "Star",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              -80,
+              -20
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 2,
+                "cornerRadius": 0,
+                "color": "#a9c6f0",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 0.75,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-5dzv3j16",
+            "name": "Star",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              180,
+              60
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 3,
+                "cornerRadius": 0,
+                "color": "#a9c6f0",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 0.75,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-r9fn9fjg",
+            "name": "Star",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              420,
+              -70
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 2,
+                "cornerRadius": 0,
+                "color": "#a9c6f0",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 0.75,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-d6c539zj",
+            "name": "Star",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              660,
+              30
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 2,
+                "cornerRadius": 0,
+                "color": "#a9c6f0",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 0.75,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-ufb6ulac",
+            "name": "Star",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              900,
+              -40
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 3,
+                "cornerRadius": 0,
+                "color": "#a9c6f0",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 0.75,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-n3nzasjl",
+            "name": "Star",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              1080,
+              80
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 2,
+                "cornerRadius": 0,
+                "color": "#a9c6f0",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 0.75,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "node-368tfjr8",
+        "name": "Hills Far",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1200,
+          560
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": -8,
+        "components": [
+          {
+            "type": "parallax",
+            "factor": [
+              0.3,
+              0.5
+            ]
+          }
+        ],
+        "children": [
+          {
+            "id": "node-wkmepszm",
+            "name": "Hill",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              -820,
+              20
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 300,
+                "cornerRadius": 0,
+                "color": "#16283f",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-ob7thu1r",
+            "name": "Hill",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              -260,
+              -10
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 340,
+                "cornerRadius": 0,
+                "color": "#16283f",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-vrf36vho",
+            "name": "Hill",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              360,
+              30
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 300,
+                "cornerRadius": 0,
+                "color": "#16283f",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-b3l3mab3",
+            "name": "Hill",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              920,
+              50
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 280,
+                "cornerRadius": 0,
+                "color": "#16283f",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "node-ronb3x9v",
+        "name": "Hills Near",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1200,
+          610
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": -8,
+        "components": [
+          {
+            "type": "parallax",
+            "factor": [
+              0.55,
+              0.8
+            ]
+          }
+        ],
+        "children": [
+          {
+            "id": "node-2pl29hhy",
+            "name": "Hill",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              -760,
+              40
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 240,
+                "cornerRadius": 0,
+                "color": "#101d2f",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-8df402pu",
+            "name": "Hill",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              -120,
+              10
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 280,
+                "cornerRadius": 0,
+                "color": "#101d2f",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-16yptqb2",
+            "name": "Hill",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              540,
+              50
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 250,
+                "cornerRadius": 0,
+                "color": "#101d2f",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-42ejqnqm",
+            "name": "Hill",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              1040,
+              20
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 220,
+                "cornerRadius": 0,
+                "color": "#101d2f",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "ground",
+        "name": "Ground",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1200,
+          700
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 0,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 2400,
+            "height": 160,
+            "radius": 16,
+            "cornerRadius": 0,
+            "color": "#17372c",
+            "strokeColor": "#2f6b52",
+            "lineWidth": 0,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "box-collider",
+            "size": [
+              2400,
+              160
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": false,
+            "layer": 1,
+            "mask": 65535
+          }
+        ],
+        "children": [
+          {
+            "id": "node-sy5c3nze",
+            "name": "Grass",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              0,
+              -78
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 1,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "rect",
+                "width": 2400,
+                "height": 8,
+                "radius": 16,
+                "cornerRadius": 0,
+                "color": "#2f6b52",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "platform-a",
+        "name": "Platform A",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          430,
+          530
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 2,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 220,
+            "height": 24,
+            "radius": 16,
+            "cornerRadius": 7,
+            "color": "#1d4a3a",
+            "strokeColor": "#3c7a5f",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "box-collider",
+            "size": [
+              220,
+              24
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": false,
+            "layer": 1,
+            "mask": 65535
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-1",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          392,
+          492
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 0
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-2",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          468,
+          492
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 0.8
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "platform-b",
+        "name": "Platform B",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          780,
+          436
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 2,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 200,
+            "height": 24,
+            "radius": 16,
+            "cornerRadius": 7,
+            "color": "#1d4a3a",
+            "strokeColor": "#3c7a5f",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "box-collider",
+            "size": [
+              200,
+              24
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": false,
+            "layer": 1,
+            "mask": 65535
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-3",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          742,
+          398
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 0.6
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-4",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          818,
+          398
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 1.4
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "platform-c",
+        "name": "Platform C",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1120,
+          520
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 2,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 260,
+            "height": 24,
+            "radius": 16,
+            "cornerRadius": 7,
+            "color": "#1d4a3a",
+            "strokeColor": "#3c7a5f",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "box-collider",
+            "size": [
+              260,
+              24
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": false,
+            "layer": 1,
+            "mask": 65535
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-5",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1082,
+          482
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 1.2
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-6",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1158,
+          482
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 2
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "platform-d",
+        "name": "Platform D",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1480,
+          420
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 2,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 200,
+            "height": 24,
+            "radius": 16,
+            "cornerRadius": 7,
+            "color": "#1d4a3a",
+            "strokeColor": "#3c7a5f",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "box-collider",
+            "size": [
+              200,
+              24
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": false,
+            "layer": 1,
+            "mask": 65535
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-7",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1442,
+          382
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 1.7999999999999998
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-8",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1518,
+          382
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 2.5999999999999996
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "platform-e",
+        "name": "Platform E",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1830,
+          530
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 2,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 240,
+            "height": 24,
+            "radius": 16,
+            "cornerRadius": 7,
+            "color": "#1d4a3a",
+            "strokeColor": "#3c7a5f",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "box-collider",
+            "size": [
+              240,
+              24
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": false,
+            "layer": 1,
+            "mask": 65535
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-9",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1792,
+          492
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 2.4
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-10",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          1868,
+          492
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 3.2
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "platform-f",
+        "name": "Platform F",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          2140,
+          430
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 2,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 180,
+            "height": 24,
+            "radius": 16,
+            "cornerRadius": 7,
+            "color": "#1d4a3a",
+            "strokeColor": "#3c7a5f",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "box-collider",
+            "size": [
+              180,
+              24
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": false,
+            "layer": 1,
+            "mask": 65535
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-11",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          2102,
+          392
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 3
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-12",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          2178,
+          392
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 3.8
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "player",
+        "name": "Player",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [
+          "player"
+        ],
+        "position": [
+          140,
+          540
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 5,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 30,
+            "height": 44,
+            "radius": 16,
+            "cornerRadius": 9,
+            "color": "#7ad7ff",
+            "strokeColor": "#d6f4ff",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "rigidbody",
+            "bodyType": "dynamic",
+            "velocity": [
+              0,
+              0
+            ],
+            "gravityScale": 1,
+            "drag": 0,
+            "mass": 1,
+            "maxSpeed": 1600
+          },
+          {
+            "type": "box-collider",
+            "size": [
+              28,
+              42
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": false,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "platformer-controller",
+            "moveSpeed": 320,
+            "groundAcceleration": 2600,
+            "airAcceleration": 1600,
+            "jumpVelocity": 660,
+            "coyoteTime": 0.1,
+            "jumpBufferTime": 0.12,
+            "jumpCutMultiplier": 0.45,
+            "maxFallSpeed": 1400
+          }
+        ],
+        "children": [
+          {
+            "id": "node-qtib89s1",
+            "name": "Visor",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              7,
+              -7
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 2,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "rect",
+                "width": 11,
+                "height": 6,
+                "radius": 16,
+                "cornerRadius": 3,
+                "color": "#08202f",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "node-rgpmmblm",
+            "name": "Scarf",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              -17,
+              6
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 1,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "rect",
+                "width": 10,
+                "height": 20,
+                "radius": 16,
+                "cornerRadius": 4,
+                "color": "#ff8a65",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "goal",
+        "name": "Goal",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          2320,
+          560
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 3,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 8,
+            "height": 120,
+            "radius": 16,
+            "cornerRadius": 0,
+            "color": "#ff8a65",
+            "strokeColor": "#00000000",
+            "lineWidth": 0,
+            "opacity": 1,
+            "zIndex": 0
+          }
+        ],
+        "children": [
+          {
+            "id": "node-sarasge9",
+            "name": "Flag",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              34,
+              -46
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "rect",
+                "width": 60,
+                "height": 34,
+                "radius": 16,
+                "cornerRadius": 4,
+                "color": "#ffcf5c",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "coin-ground-a",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          600,
+          575
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 0.3
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "coin-ground-b",
+        "name": "Coin",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          980,
+          575
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 4,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "circle",
+            "width": 32,
+            "height": 32,
+            "radius": 13,
+            "cornerRadius": 0,
+            "color": "#ffcf5c",
+            "strokeColor": "#fff0b8",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "circle-collider",
+            "radius": 18,
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": true,
+            "layer": 1,
+            "mask": 65535
+          },
+          {
+            "type": "collectible",
+            "value": 10,
+            "requiredTag": "player",
+            "destroyOnCollect": true,
+            "sound": true
+          },
+          {
+            "type": "oscillator",
+            "amplitude": [
+              0,
+              -5
+            ],
+            "frequency": 1.4,
+            "phase": 1.1
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "hud",
+        "name": "HUD",
+        "active": true,
+        "visible": true,
+        "screenSpace": true,
+        "tags": [],
+        "position": [
+          24,
+          20
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 100,
+        "components": [],
+        "children": [
+          {
+            "id": "hud-score",
+            "name": "Score",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 1,
+            "components": [
+              {
+                "type": "text",
+                "text": "SCORE 0",
+                "size": 26,
+                "color": "#eaf4ff",
+                "weight": "800",
+                "align": "left",
+                "lineHeight": 0,
+                "opacity": 1,
+                "zIndex": 0
+              },
+              {
+                "type": "counter-text",
+                "event": "collect",
+                "template": "SCORE {value}",
+                "accumulate": true,
+                "startingValue": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "hud-hint",
+            "name": "Hint",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              0,
+              40
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "text",
+                "text": "A/D or arrows to run  ·  SPACE to jump",
+                "size": 13,
+                "color": "#8ba3c7",
+                "weight": "600",
+                "align": "left",
+                "lineHeight": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

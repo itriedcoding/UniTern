@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "name": "Hello UniTern",
+  "settings": {
+    "background": "#0f172a",
+    "gravity": [
+      0,
+      1800
+    ],
+    "fixedStep": 0.016666666666666666
+  },
+  "assets": [],
+  "root": {
+    "id": "node-8kkefjjw",
+    "name": "Root",
+    "active": true,
+    "visible": true,
+    "screenSpace": false,
+    "tags": [],
+    "position": [
+      0,
+      0
+    ],
+    "rotation": 0,
+    "scale": [
+      1,
+      1
+    ],
+    "zIndex": 0,
+    "components": [],
+    "children": [
+      {
+        "id": "main-camera",
+        "name": "Main Camera",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          480,
+          270
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 0,
+        "components": [],
+        "children": []
+      },
+      {
+        "id": "hud",
+        "name": "HUD",
+        "active": true,
+        "visible": true,
+        "screenSpace": true,
+        "tags": [],
+        "position": [
+          32,
+          28
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 10,
+        "components": [],
+        "children": [
+          {
+            "id": "title",
+            "name": "Title",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "text",
+                "text": "Hello, UniTern",
+                "size": 34,
+                "color": "#eaf4ff",
+                "weight": "800",
+                "align": "left",
+                "lineHeight": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "subtitle",
+            "name": "Subtitle",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              0,
+              48
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "text",
+                "text": "Open this scene in the editor, then press Play.",
+                "size": 14,
+                "color": "#93a9c6",
+                "weight": "600",
+                "align": "left",
+                "lineHeight": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "spinner",
+        "name": "Spinner",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          480,
+          300
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 1,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 120,
+            "height": 120,
+            "radius": 16,
+            "cornerRadius": 18,
+            "color": "#5b9dff",
+            "strokeColor": "#bcd7ff",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "spinner",
+            "degreesPerSecond": 45
+          }
+        ],
+        "children": [
+          {
+            "id": "node-v5gtesa2",
+            "name": "Dot",
+            "active": true,
+            "visible": true,
+            "screenSpace": false,
+            "tags": [],
+            "position": [
+              0,
+              0
+            ],
+            "rotation": 0,
+            "scale": [
+              1,
+              1
+            ],
+            "zIndex": 0,
+            "components": [
+              {
+                "type": "shape",
+                "shape": "circle",
+                "width": 32,
+                "height": 32,
+                "radius": 16,
+                "cornerRadius": 0,
+                "color": "#6ee7b7",
+                "strokeColor": "#00000000",
+                "lineWidth": 0,
+                "opacity": 1,
+                "zIndex": 0
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "floor",
+        "name": "Floor",
+        "active": true,
+        "visible": true,
+        "screenSpace": false,
+        "tags": [],
+        "position": [
+          480,
+          520
+        ],
+        "rotation": 0,
+        "scale": [
+          1,
+          1
+        ],
+        "zIndex": 0,
+        "components": [
+          {
+            "type": "shape",
+            "shape": "rect",
+            "width": 960,
+            "height": 80,
+            "radius": 16,
+            "cornerRadius": 10,
+            "color": "#16243a",
+            "strokeColor": "#243a58",
+            "lineWidth": 2,
+            "opacity": 1,
+            "zIndex": 0
+          },
+          {
+            "type": "box-collider",
+            "size": [
+              960,
+              80
+            ],
+            "offset": [
+              0,
+              0
+            ],
+            "isTrigger": false,
+            "layer": 1,
+            "mask": 65535
+          }
+        ],
+        "children": []
+      }
+    ]
+  }
+}
